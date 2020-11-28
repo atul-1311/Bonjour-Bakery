@@ -1,0 +1,91 @@
+@import './variables';
+
+*{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat';
+    color: $dark;
+    align-content: center;
+    align-items: center;
+    background-color: $primary;
+    height: 4000px;
+}
+
+.container{
+    max-width: 1200px;
+}
+
+
+nav ul li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    &:hover{
+        color: $accent;
+    }
+}
+
+
+nav li:last-child a {
+    background: $accent;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background: $dark;
+    }
+}
+
+section.hero{
+    background: $secondary;
+    height: 700px;
+}
+
+.size{
+    background: $secondary;
+}
+
+.add-to-cart{
+    border: 2px solid $accent;
+    color: $accent;
+    &:hover{
+        background: $accent;
+        border-color: $pure;
+        color: $pure;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.btn-accent{
+    background: $accent;
+    &:hover{
+        background: $dark;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+section.cart {
+    background: $secondary;
+
+    .amount{
+        color: $accent;
+    }
+}
+
+.span-color{
+    color: $accent;
+}
+
+section.login{
+    background: $secondary;
+    min-height: calc(100vh - 120px);
+    a {
+        color: $accent;
+        &:hover {
+            color: $dark;
+        }
+    }
+}

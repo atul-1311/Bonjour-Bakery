@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  color: #232323;
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 4000px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+nav ul li {
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #FE5F1E;
+}
+
+nav li:last-child a {
+  background: #FE5F1E;
+  transition: all 0.3s ease-in-out;
+}
+
+nav li:last-child a:hover {
+  background: #232323;
+}
+
+section.hero {
+  background: #F8F8F8;
+  height: 700px;
+}
+
+.size {
+  background: #F8F8F8;
+}
+
+.add-to-cart {
+  border: 2px solid #FE5F1E;
+  color: #FE5F1E;
+}
+
+.add-to-cart:hover {
+  background: #FE5F1E;
+  border-color: #ffffff;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-accent {
+  background: #FE5F1E;
+}
+
+.btn-accent:hover {
+  background: #232323;
+  transition: all 0.3s ease-in-out;
+}
+
+section.cart {
+  background: #F8F8F8;
+}
+
+section.cart .amount {
+  color: #FE5F1E;
+}
+
+.span-color {
+  color: #FE5F1E;
+}
+
+section.login {
+  background: #F8F8F8;
+  min-height: calc(100vh - 120px);
+}
+
+section.login a {
+  color: #FE5F1E;
+}
+
+section.login a:hover {
+  color: #232323;
+}
+
