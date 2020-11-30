@@ -1,0 +1,20 @@
+[
+    {
+    "_id": {"$oid": "5aaa8880e45e22170cf2bea1" },"name": "Cake","image": "cake-s.png","price": "150","size": "small"},{
+    "_id": {"$oid": "5aaa8880e45e22170cf2bea2" }, "name": "Cake", "image": "cake-m.png", "price": "300", "size": "madium"},{
+    "_id": {"$oid": "5aaa8880e45e22170cf2bea3" },    "name": "Cake",    "image": "cake-l.png",    "price": "550",    "size": "large" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2bea4" },   "name": "Cookie",    "image": "cookie.png",    "price": "200"},{
+    "_id": {"$oid": "5aaa8880e45e22170cf2bea5" },    "name": "Pie",    "image": "pie-m.png",    "price": "100",    "size": "junior" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2bea6" },    "name": "Pie",    "image": "pie-m.png",    "price": "250",    "size": "family" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2bea7" },    "name": "Pie",    "image": "pie-l.png",    "price": "450",    "size": "extra-large" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2bea8" },    "name": "Doughnut",    "image": "doughnut.png",    "price": "200" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2bea9" },    "name": "Muffin",    "image": "muffin.png",    "price": "120",    "size": "small" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2be10" },    "name": "Muffin",    "image": "muffin.png",    "price": "250",    "size": "medium" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2be11" },    "name": "Muffin",    "image": "muffin.png",    "price": "400",    "size": "large" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2be12" },    "name": "Pastry",    "image": "pastry.png",    "price": "130" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2be13" },    "name": "Pizza",    "image": "pizza-s.png",    "price": "120",    "size": "small" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2be14" },    "name": "Pizza",    "image": "pizza-m.png",    "price": "200",    "size": "medium" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2be15" },    "name": "Pizza",    "image": "pizza-l.png",    "price": "550",    "size": "large" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2be16" },    "name": "Tortillas",    "image": "tortilla.png",    "price": "80" },{
+    "_id": {"$oid": "5aaa8880e45e22170cf2be17" },    "name": "Rusk Toast",    "image": "rusk-toast.png",    "price": "110" }
+]
