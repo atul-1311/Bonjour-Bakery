@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonjour Bakery - Love at first bite</title>
     <link rel="icon" href="/img/site-icon.png" type="image/icon-type">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
 </head>
+
 <body>
     <div class="site-main-wrapper">
         <div class="main-nav">
@@ -20,11 +24,21 @@
                     <ul class="flex items-center">
                         <li class="ml-10"><a href="#">Menu</a></li>
                         <li class="ml-10"><a href="#">Offers</a></li>
+                        <% if(user) { %>
+                        <li class="ml-10">
+                            <form id="logout" action="/logout" method="POST">
+                                <a onclick="document.getElementById('logout').submit()" 
+                                href="#">Logout</a>
+                            </form>
+                        </li>
+                        <% } else { %>
                         <li class="ml-10"><a href="/register">Register</a></li>
                         <li class="ml-10"><a href="/login">Login</a></li>
+                        <% } %>
                         <li class="ml-10"><a href="/cart" class="inline-block px-6 py-2 rounded-full flex items-center">
-                            <span id="cartCounter" class="text-white font-bold pr-2"><%= session.cart ? session.cart.totalQty : '' %></span>
-                            <img src="/img/cart.png" alt="cart"></a></li>
+                                <span id="cartCounter"
+                                    class="text-white font-bold pr-2"><%= session.cart ? session.cart.totalQty : '' %></span>
+                                <img src="/img/cart.png" alt="cart"></a></li>
                     </ul>
                 </div>
             </nav>
@@ -33,8 +47,9 @@
         <%- body %>
         <!-- The content between body and footer lies here -->
         <!-- <footer></footer>-->
-        
+
     </div>
     <script src="/js/app.js"></script>
 </body>
+
 </html>
