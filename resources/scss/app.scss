@@ -99,3 +99,11 @@ section.login{
     border-radius: 50px!important;
     padding-left: 8px!important;
 }
+
+a.link {
+    color: $accent;
+    &:hover {
+        color: $dark;
+        transition: all 0.3s ease-in-out;
+    }
+}

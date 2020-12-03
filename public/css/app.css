@@ -406,3 +406,12 @@ section.login a:hover {
   padding-left: 8px !important;
 }
 
+a.link {
+  color: #FE5F1E;
+}
+
+a.link:hover {
+  color: #232323;
+  transition: all 0.3s ease-in-out;
+}
+
