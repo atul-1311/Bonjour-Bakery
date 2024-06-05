@@ -5,7 +5,7 @@ const ejs = require('ejs')
 const path = require('path')
 const expressLayout = require('express-ejs-layouts')
 
-const PORT = process.env.PORT || 3300
+const PORT = process.env.PORT || 5001
 
 const mongoose = require('mongoose')
 const session = require('express-session')
@@ -16,15 +16,18 @@ const Emitter = require('events')
 
 // database connection
 
-const url = 'mongodb://localhost/Bonjour-Bakery';
-mongoose.connect(url, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology: true,
-useFindAndModify : true });
+const url = 'mongodb://localhost:27017/Bonjour-Bakery';
+mongoose.connect(url, { useNewUrlParser: true });
+
 const connection = mongoose.connection;
+
+connection.on('error', (error) => {
+    console.error('Connection failed...', error);
+});
+
 connection.once('open', () => {
-    console.log('Database connected...');            //Databe connection snippet
-}).catch(err => {
-    console.log('Connection failed...')
-});        
+    console.log('Database connected...');
+});      
 
 
 

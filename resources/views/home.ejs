@@ -1,13 +1,13 @@
 <section class="hero py-16">
     <div class="container mx-auto flex items-center justify-between">
         <div class="w-1/2">
-            <h6 class="text-2xl mb-7 font-bold">Love at first bite.</h6>
-            <h6 class="text-2xl mb-2 font-light">Experience the best of baking with </h6>
-            <h1 class="text-6xl font-black mb-10">Bonjour Bakery</h1>
+            <h6 class="text-xs md:text-2xl mb-7 font-bold">Love at first bite.</h6>
+            <h6 class="text-xs md:text-2xl mb-2 font-light">Experience the best of baking with </h6>
+            <h1 class="text-3xl md:text-6xl font-black mb-10">Bonjour Bakery</h1>
             <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-accent">Order Now</button>
         </div>
-        <div>
-            <img src="/img/hero.png" alt="bakery" width="475px" height="475px">
+        <div class='w-1/2'>
+            <img class="mx-auto" src="/img/hero.png" alt="bakery"   width="475px" height="475px">
         </div>
     </div>
 </section>
@@ -15,10 +15,10 @@
 
 <section class="menu container mx-auto py-8">
     <h1 class="text-xl font-bold mt-8 mb-16 text-2xl"><span class="span-color">Our</span> Products</h1>
-    <div class="grid grid-cols-4 grid-flow-row gap-16"> <!--data changed here "cols-gap-12 row-gap-16-->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-flow-row gap-16"> <!--data changed here "cols-gap-12 row-gap-16-->
         
         <% bakeryitems.forEach(function(bakeryitem) { %>
-            <div class="w-64">
+            <div class="w-full md:w-64">
                 <img class="h-40 mb-4 mx-auto" src="/img/<%= bakeryitem.image %>" alt="cake">
                 <div class="text-center">
                     <h2 class="mb-4 px-2.5 text-lg"><%= bakeryitem.name %></h2>

@@ -14,7 +14,7 @@ function updateCart(bakeryitem) {
             type: 'success',
             timeout: 800,         //1000 ms= 1 sec
             text: 'Item added to Cart',
-            progressBar: false
+            progressBar: true
            // layout: 'topleft'   to put it on left side of home page.
         }).show();
 
@@ -27,6 +27,12 @@ function updateCart(bakeryitem) {
         }).show();       
     })
 }
+
+
+
+
+
+
 
 addToCart.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -83,8 +89,50 @@ function updateStatus(order) {
 
 updateStatus(order);
 
-// socket
 
+// Ajax call
+const paymentForm = document.querySelector('#payment-form');
+
+if(paymentForm){
+    paymentForm.addEventListener('submit', (e)=> {
+        e.preventDefault();
+        let formData = new FormData(paymentForm);
+        let formObject = {}
+    
+        for(let [key, value] of formData.entries()){
+            formObject[key]=value;
+        }
+        
+        axios.post('/orders', formObject).then((res)=> {
+            new Noty({
+                type: 'success',
+                timeout: 800,         //1000 ms= 1 sec
+                text: res.data.message,
+                progressBar: true
+               // layout: 'topleft'   to put it on left side of home page.
+            }).show();
+
+            setTimeout(()=> {
+                window.location.href = '/customer/orders';
+            }, 1000);
+            
+        }).catch((err)=> {
+            console.log(err);
+        })
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+// socket
 let socket = io()
 initAdmin(socket)
 
